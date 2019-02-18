@@ -1,2 +1,2 @@
 # qvgdm
-Devenez Jean-Pierre Foucault le temps d'une partie de Qui Veut Gagner des Millions !!!
+Vivez le célèbre jeu télévisé Qui Veut Gagner des Millions comme si vous y étiez !!!
