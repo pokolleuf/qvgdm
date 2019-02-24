@@ -29,6 +29,6 @@ const theme = createMuiTheme({
     },
   },
   typography: {
-    fontFamily: "ArenaCondensed",
+    fontFamily: "'PT Sans', sans-serif",
   }
 })

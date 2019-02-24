@@ -56,6 +56,7 @@ const styles = theme => ({
         right: 0,
         bottom: 0,
         overflow: "hidden",
+        backgroundColor: "#000000",
     },
 })
 

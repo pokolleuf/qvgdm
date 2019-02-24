@@ -32,12 +32,17 @@ class Game extends React.Component {
     super(props)
     this.state = {
       drawer: false,
-      displayButtons: false,
+      displayButtons: true, // normally false
       FFActive: false,
       phoneActive: false,
       audienceActive: false,
       questionsWinned: 0,
       message: "",
+      question: {
+        oneLine: false,
+        text: "A la TV, on peut souvent voir Pamela Anderson courir à moitié nue sur les plages de...",
+        answers: {a:{text: "Calais", correct: false}, b:{text: "Dunkerque", correct: false}, c:{text: "Berck", correct: false}, d:{text: "Malibu", correct: true}},
+      },
       jokerAnimate: false,
       showLosanges: false,
       gains: ["200", "300", "500", "800", "1 500", "3 000", "6 000", "12 000", "24 000", "48 000", "72 000", "100 000", "150 000", "300 000", "1 000 000"],
@@ -52,63 +57,64 @@ class Game extends React.Component {
 
   componentDidMount(){
     this.tickTimer = setInterval(() => this.tick(), 10)
-    setTimeout(() => {this.setState({message: "Bienvenue à Qui Veut Gagner des millions"})}, 3000)
-    setTimeout(() => {this.setState({message: ""})}, 8800)
-    setTimeout(() => {this.setState({message: "Installez-vous et regardez la pyramide des gains qui vous attend..."})}, 9200)
-    setTimeout(() => {this.setState({message: ""})}, 14800)
-    setTimeout(() => {this.setState({drawer: true})}, 15000)
-    setTimeout(() => {this.setState({message: "15 questions avec un 1er palier à 1 500 euros, puis un 2nd palier à 48 000 euros et enfin... le million d'euros !"})}, 15200)
-    setTimeout(() => {this.setState({questionsWinned: 1})}, 15800)
-    setTimeout(() => {this.setState({questionsWinned: 2})}, 16200)
-    setTimeout(() => {this.setState({questionsWinned: 3})}, 16600)
-    setTimeout(() => {this.setState({questionsWinned: 4})}, 17000)
-    setTimeout(() => {this.setState({questionsWinned: 5})}, 17400)
-    setTimeout(() => {this.setState({questionsWinned: 6})}, 17800)
-    setTimeout(() => {this.setState({questionsWinned: 7})}, 18200)
-    setTimeout(() => {this.setState({questionsWinned: 8})}, 18600)
-    setTimeout(() => {this.setState({questionsWinned: 9})}, 19000)
-    setTimeout(() => {this.setState({questionsWinned: 10})}, 19400)
-    setTimeout(() => {this.setState({questionsWinned: 11})}, 19800)
-    setTimeout(() => {this.setState({questionsWinned: 12})}, 20200)
-    setTimeout(() => {this.setState({questionsWinned: 13})}, 20600)
-    setTimeout(() => {this.setState({questionsWinned: 14})}, 21000)
-    setTimeout(() => {this.setState({questionsWinned: 15})}, 21400)
-    setTimeout(() => {this.setState({questionsWinned: 16})}, 21800)
-    setTimeout(() => {this.setState({questionsWinned: 15})}, 22200)
-    setTimeout(() => {this.setState({questionsWinned: 16})}, 22600)
-    setTimeout(() => {this.setState({questionsWinned: 15})}, 23000)
-    setTimeout(() => {this.setState({questionsWinned: 16})}, 23400)
-    setTimeout(() => {this.setState({questionsWinned: 15})}, 23800)
-    setTimeout(() => {this.setState({message: ""})}, 23200)
-    setTimeout(() => {this.setState({questionsWinned: 0})}, 24800)
-    setTimeout(() => {this.setState({message: "Pour vous accompagner, 3 jokers..."})}, 25000)
-    setTimeout(() => {this.setState({message: ""})}, 27200)
-    setTimeout(() => {this.setState({jokerAnimate: true})}, 28000)
-    setTimeout(() => {this.setState({FFActive: true})}, 28000)
-    setTimeout(() => {this.setState({message: "Le 50/50"})}, 28000)
-    setTimeout(() => {this.setState({FFActive: false})}, 28900)
-    setTimeout(() => {this.setState({phoneActive: true})}, 30000)
-    setTimeout(() => {this.setState({message: "L'appel à un ami"})}, 29900)
-    setTimeout(() => {this.setState({phoneActive: false})}, 30700)
-    setTimeout(() => {this.setState({audienceActive: true})}, 31200)
-    setTimeout(() => {this.setState({message: "Et l'avis du public"})}, 31000)
-    setTimeout(() => {this.setState({audienceActive: false})}, 31900)
-    setTimeout(() => {this.setState({message: ""})}, 32000)
-    setTimeout(() => {this.setState({drawer: false})}, 34000)
-    setTimeout(() => {this.setState({displayButtons: true})}, 34400)
-    setTimeout(() => {this.setState({message: "Je vous rappelle que vous avez aussi la possibilité de partir à tout moment avec la somme gagnée à la dernière question"})}, 34800)
-    setTimeout(() => {this.setState({message: ""})}, 48000)
-    setTimeout(() => {this.setState({message: "Si vous échouez à une question, vous nous quitterez avec la somme gagnée au dernier palier"})}, 48400)
-    setTimeout(() => {this.setState({message: ""})}, 54400)
-    setTimeout(() => {this.setState({message: "Allez, sans plus attendre, jouons..."})}, 56000)
-    setTimeout(() => {this.setState({message: ""})}, 58000)
-    setTimeout(() => {this.setState({message: "à Qui Veut Gagner des millions !"})}, 58600)
-    setTimeout(() => {this.setState({message: ""})}, 62600)
-    setTimeout(() => {this.setState({minOpacity: undefined})}, 62600)
-    setTimeout(() => {this.setState({maxOpacity: 0.5})}, 62600)
-    setTimeout(() => {this.setState({backgroundSound: sound2})}, 62600)
-    setTimeout(() => {this.setState({backgroundSound: sound3})}, 68000)
-    setTimeout(() => {this.setState({showLosanges: true})}, 68000)
+    // setTimeout(() => {this.setState({message: "Bienvenue à Qui Veut Gagner des millions"})}, 3000)
+    // setTimeout(() => {this.setState({message: ""})}, 8800)
+    // setTimeout(() => {this.setState({message: "Installez-vous et regardez la pyramide des gains qui vous attend..."})}, 9200)
+    // setTimeout(() => {this.setState({message: ""})}, 14800)
+    // setTimeout(() => {this.setState({drawer: true})}, 15000)
+    // setTimeout(() => {this.setState({message: "15 questions avec un 1er palier à 1 500 euros, puis un 2nd palier à 48 000 euros et enfin... le million d'euros !"})}, 15200)
+    // setTimeout(() => {this.setState({questionsWinned: 1})}, 15800)
+    // setTimeout(() => {this.setState({questionsWinned: 2})}, 16200)
+    // setTimeout(() => {this.setState({questionsWinned: 3})}, 16600)
+    // setTimeout(() => {this.setState({questionsWinned: 4})}, 17000)
+    // setTimeout(() => {this.setState({questionsWinned: 5})}, 17400)
+    // setTimeout(() => {this.setState({questionsWinned: 6})}, 17800)
+    // setTimeout(() => {this.setState({questionsWinned: 7})}, 18200)
+    // setTimeout(() => {this.setState({questionsWinned: 8})}, 18600)
+    // setTimeout(() => {this.setState({questionsWinned: 9})}, 19000)
+    // setTimeout(() => {this.setState({questionsWinned: 10})}, 19400)
+    // setTimeout(() => {this.setState({questionsWinned: 11})}, 19800)
+    // setTimeout(() => {this.setState({questionsWinned: 12})}, 20200)
+    // setTimeout(() => {this.setState({questionsWinned: 13})}, 20600)
+    // setTimeout(() => {this.setState({questionsWinned: 14})}, 21000)
+    // setTimeout(() => {this.setState({questionsWinned: 15})}, 21400)
+    // setTimeout(() => {this.setState({questionsWinned: 16})}, 21800)
+    // setTimeout(() => {this.setState({questionsWinned: 15})}, 22200)
+    // setTimeout(() => {this.setState({questionsWinned: 16})}, 22600)
+    // setTimeout(() => {this.setState({questionsWinned: 15})}, 23000)
+    // setTimeout(() => {this.setState({questionsWinned: 16})}, 23400)
+    // setTimeout(() => {this.setState({questionsWinned: 15})}, 23800)
+    // setTimeout(() => {this.setState({message: ""})}, 23200)
+    // setTimeout(() => {this.setState({questionsWinned: 0})}, 24800)
+    // setTimeout(() => {this.setState({message: "Pour vous accompagner, 3 jokers..."})}, 25000)
+    // setTimeout(() => {this.setState({message: ""})}, 27200)
+    // setTimeout(() => {this.setState({jokerAnimate: true})}, 28000)
+    // setTimeout(() => {this.setState({FFActive: true})}, 28000)
+    // setTimeout(() => {this.setState({message: "Le 50/50"})}, 28000)
+    // setTimeout(() => {this.setState({FFActive: false})}, 28900)
+    // setTimeout(() => {this.setState({phoneActive: true})}, 30000)
+    // setTimeout(() => {this.setState({message: "L'appel à un ami"})}, 29900)
+    // setTimeout(() => {this.setState({phoneActive: false})}, 30700)
+    // setTimeout(() => {this.setState({audienceActive: true})}, 31200)
+    // setTimeout(() => {this.setState({message: "Et l'avis du public"})}, 31000)
+    // setTimeout(() => {this.setState({audienceActive: false})}, 31900)
+    // setTimeout(() => {this.setState({message: ""})}, 32000)
+    // setTimeout(() => {this.setState({drawer: false})}, 34000)
+    // setTimeout(() => {this.setState({displayButtons: true})}, 34400)
+    // setTimeout(() => {this.setState({message: "Je vous rappelle que vous avez aussi la possibilité de partir à tout moment avec la somme gagnée à la dernière question"})}, 34800)
+    // setTimeout(() => {this.setState({message: ""})}, 48000)
+    // setTimeout(() => {this.setState({message: "Si vous échouez à une question, vous nous quitterez avec la somme gagnée au dernier palier"})}, 48400)
+    // setTimeout(() => {this.setState({message: ""})}, 54400)
+    // setTimeout(() => {this.setState({message: "Allez, sans plus attendre, jouons..."})}, 56000)
+    // setTimeout(() => {this.setState({message: ""})}, 58000)
+    // setTimeout(() => {this.setState({message: "à Qui Veut Gagner des millions !"})}, 58600)
+    // setTimeout(() => {this.setState({message: ""})}, 62600)
+    // ADD A 6
+    setTimeout(() => {this.setState({minOpacity: undefined})}, 2600)
+    setTimeout(() => {this.setState({maxOpacity: 0.5})}, 2600)
+    setTimeout(() => {this.setState({backgroundSound: sound2})}, 2600)
+    setTimeout(() => {this.setState({backgroundSound: sound3})}, 8000)
+    setTimeout(() => {this.setState({showLosanges: true})}, 8000)
   }
 
   tick(){
@@ -243,8 +249,8 @@ class Game extends React.Component {
         </CardContent>
       </Card>
 
-      <div className={this.state.showLosanges ? classes.question : ""}>
-          A la TV, on peut souvent voir Pamela Anderson courir à moitié nue sur les plages de...
+      <div style={this.state.question.oneLine ? {marginTop : "1.3vw"} : {marginTop : "0vw"}} className={this.state.showLosanges ? classes.question : ""}>
+        {this.state.question.text ? this.state.question.text : ""}
       </div>
 
       <Card className={classes.background} style={{opacity: this.state.backgroundOpacity}} elevation={0}>
@@ -313,13 +319,13 @@ const styles = theme => ({
       justifyContent: "center",
       alignItems: "center",
       textAlign: "center",
-      top: "32vw",
+      top: "31.7vw",
       left: "15vw",
       backgroundColor: "rgba(0,0,0,0)",
       zIndex: 100000,
-      fontFamily: "ArenaCondensed",
-      fontSize: "2.2vw",
-      letterSpacing: "-0.05vw",
+      fontFamily: "PT Sans",
+      fontWeight: "bold",
+      fontSize: "2.1vw",
       color: "#FFFFFF",
       zIndex: 3,
     },
