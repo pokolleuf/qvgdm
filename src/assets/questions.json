@@ -25,13 +25,13 @@
 
     "question3":[
         {
-            "oneLine": false,
-            "text": "Quelle application permet de faire des rencontres en « swipant » vers la droite ou vers la gauche ?",
+            "oneLine": true,
+            "text": "Qu'est-ce qui gravite autour de la Terre ?",
             "answers": {
-                "a":{"text": "Facebook", "correct": false},
-                "b":{"text": "SoundCloud", "correct": false},
-                "c":{"text": "Tinder", "correct": true},
-                "d":{"text": "Spotify", "correct": false}}
+                "a":{"text": "La Lune", "correct": true},
+                "b":{"text": "Le Soleil", "correct": false},
+                "c":{"text": "Mars", "correct": false},
+                "d":{"text": "Vénus", "correct": false}}
         }
     ],
 

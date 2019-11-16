@@ -11,7 +11,7 @@ import Intro from '../Videos/classic.mp4';
 class Video extends React.Component {
 
     componentDidMount(){
-        setTimeout(() => this._toggleView(3), 1000)
+        setTimeout(() => this._toggleView(3), 22000)
     }
 
     _toggleView(value) {
