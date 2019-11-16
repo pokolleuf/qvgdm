@@ -1,6 +1,6 @@
 .super-button-ok {
-    width: 100px;
-    height: 62px;
+    width: 7.32vw;
+    height: 4.54vw;
     background-image: url(../Images/buttons/ok_normal.png);
     background-size: cover;
     transition: all 300ms ease-in;
@@ -16,8 +16,8 @@
   }
 
   .super-button-back {
-    width: 100px;
-    height: 62px;
+    width: 7.32vw;
+    height: 4.54vw;
     background-image: url(../Images/buttons/back_normal.png);
     background-size: cover;
     transition: all 300ms ease-in;

@@ -1,0 +1,355 @@
+.super-answer-a {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 13.4vw;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-a-active {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 13.4vw;
+    background-image: url(../Images/game/active.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-a-correct {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 13.4vw;
+    background-image: url(../Images/game/correct.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-a-letter-orange {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/a_orange.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-a-letter-white {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/a_white.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-a-text-white {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #FFFFFF;
+  }
+
+  .super-answer-a-text-black {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #000000;
+  }
+
+  .super-answer-b {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 51.6vw;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-b-active {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 51.6vw;
+    background-image: url(../Images/game/active.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-b-correct {
+    position: absolute;
+    width: 34.7vw;
+    height: 4.0vw;
+    top: 40.3vw;
+    left: 51.6vw;
+    background-image: url(../Images/game/correct.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-b-letter-orange {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/b_orange.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-b-letter-white {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/b_white.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-b-text-white {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #FFFFFF;
+  }
+
+  .super-answer-b-text-black {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #000000;
+  }
+
+  .super-answer-c {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 13.45vw;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-c-active {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 13.45vw;
+    background-image: url(../Images/game/active.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-c-correct {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 13.45vw;
+    background-image: url(../Images/game/correct.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-c-letter-orange {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/c_orange.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-c-letter-white {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/c_white.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-c-text-white {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #FFFFFF;
+  }
+
+  .super-answer-c-text-black {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #000000;
+  }
+
+  .super-answer-d {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 51.6vw;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-d-active {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 51.6vw;
+    background-image: url(../Images/game/active.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-d-correct {
+    position: absolute;
+    width: 34.68vw;
+    height: 4.01vw;
+    top: 46.28vw;
+    left: 51.56vw;
+    background-image: url(../Images/game/correct.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .super-answer-d-letter-orange {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/d_orange.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-d-letter-white {
+    position: absolute;
+    width: 4.58vw;
+    height: 2.39vw;
+    top: 0.65vw;
+    left: 1.6vw;
+    background-image: url(../Images/game/d_white.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .super-answer-d-text-white {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #FFFFFF;
+  }
+
+  .super-answer-d-text-black {
+    position: absolute;
+    top: 0.2vw;
+    left: 6.4vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    color: #000000;
+  }

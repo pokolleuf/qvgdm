@@ -1,0 +1,181 @@
+{
+    "question1":[
+        {
+            "oneLine": false,
+            "text": "Selon le code de la route, que doit impérativement faire un conducteur devant le feu rouge ?",
+            "answers": {
+                "a":{"text": "S'arrêter", "correct": true},
+                "b":{"text": "Accélérer", "correct": false},
+                "c":{"text": "Rouler avec prudence", "correct": false},
+                "d":{"text": "Klaxonner", "correct": false}}
+        }
+    ],
+
+    "question2":[
+        {
+            "oneLine": false,
+            "text": "Complétez ces paroles d'Hamlet : « Être ou ne pas être, telle est la... »",
+            "answers": {
+                "a":{"text": "Vérité", "correct": false},
+                "b":{"text": "Question", "correct": true},
+                "c":{"text": "Solution", "correct": false},
+                "d":{"text": "Destinée", "correct": false}}
+        }
+    ],
+
+    "question3":[
+        {
+            "oneLine": false,
+            "text": "Quelle application permet de faire des rencontres en « swipant » vers la droite ou vers la gauche ?",
+            "answers": {
+                "a":{"text": "Facebook", "correct": false},
+                "b":{"text": "SoundCloud", "correct": false},
+                "c":{"text": "Tinder", "correct": true},
+                "d":{"text": "Spotify", "correct": false}}
+        }
+    ],
+
+    "question4":[
+        {
+            "oneLine": false,
+            "text": "Dans la saga « Star Wars », comment s'appelle le droïde accompagnant R2-D2 ?",
+            "answers": {
+                "a":{"text": "C-3PO", "correct": true},
+                "b":{"text": "Han", "correct": false},
+                "c":{"text": "Luke", "correct": false},
+                "d":{"text": "Dark Vador", "correct": false}}
+        }
+    ],
+
+    "question5":[
+        {
+            "oneLine": false,
+            "text": "Quelle est la nationalité du réalisateur et producteur Steven Spielberg ?",
+            "answers": {
+                "a":{"text": "Tunisienne", "correct": false},
+                "b":{"text": "Canadienne", "correct": false},
+                "c":{"text": "Marocaine", "correct": false},
+                "d":{"text": "Américaine", "correct": true}}
+        }
+    ],
+
+    "question6":[
+        {
+            "oneLine": false,
+            "text": "Quelle confiserie à base de blanc d'œuf, de miel et d'amande est fabriquée à Montelimar ?",
+            "answers": {
+                "a":{"text": "La dragée", "correct": false},
+                "b":{"text": "Le nougat", "correct": true},
+                "c":{"text": "Le calisson", "correct": false},
+                "d":{"text": "La guimauve", "correct": false}}
+        }
+    ],
+
+    "question7":[
+        {
+            "oneLine": false,
+            "text": "Dans le film d'animation « Les Indestructibles », qui s'est juré d'anéantir tous les super-héros ?",
+            "answers": {
+                "a":{"text": "Cyclone", "correct": false},
+                "b":{"text": "Symptôme", "correct": false},
+                "c":{"text": "Frozone", "correct": false},
+                "d":{"text": "Syndrome", "correct": true}}
+        }
+    ],
+
+    "question8":[
+        {
+            "oneLine": true,
+            "text": "Selon la mythologie grecque, qui est la sœur du dieu Apollon ?",
+            "answers": {
+                "a":{"text": "Artémis", "correct": true},
+                "b":{"text": "Aphrodite", "correct": false},
+                "c":{"text": "Héra", "correct": false},
+                "d":{"text": "Athéna", "correct": false}}
+        }
+    ],
+
+    "question9":[
+        {
+            "oneLine": true,
+            "text": "Le knish est un plat traditionnelement composé de...",
+            "answers": {
+                "a":{"text": "Maïs", "correct": false},
+                "b":{"text": "Haricots", "correct": false},
+                "c":{"text": "Betterave rouge", "correct": false},
+                "d":{"text": "Pomme de terre", "correct": true}}
+        }
+    ],
+
+    "question10":[
+        {
+            "oneLine": false,
+            "text": "Quel est le nom de l'unité du système international qui mesure une fréquence ?",
+            "answers": {
+                "a":{"text": "Hertz", "correct": true},
+                "b":{"text": "Joule", "correct": false},
+                "c":{"text": "Becquerel", "correct": false},
+                "d":{"text": "Watt", "correct": false}}
+        }
+    ],
+
+    "question11":[
+        {
+            "oneLine": false,
+            "text": "De quelle marque Laetitia Casta, Lindsay Lohan et Kirsten Dunst ont-elle été les égéries ?",
+            "answers": {
+                "a":{"text": "Berluti", "correct": false},
+                "b":{"text": "Miu Miu", "correct": true},
+                "c":{"text": "Rodeo Drive", "correct": false},
+                "d":{"text": "Moncler", "correct": false}}
+        }
+    ],
+
+    "question12":[
+        {
+            "oneLine": false,
+            "text": "Dans quelle pièce Jean-Paul Sartre a-t-il écrit : « Tous les moyens sont bons quand ils sont efficaces » ?",
+            "answers": {
+                "a":{"text": "Les Mains sales", "correct": true},
+                "b":{"text": "Huis clos", "correct": false},
+                "c":{"text": "Les mouches", "correct": false},
+                "d":{"text": "L'Engrenage", "correct": false}}
+        }
+    ],
+
+    "question13":[
+        {
+            "oneLine": true,
+            "text": "Combien d'étages possède la tour de Pise ?",
+            "answers": {
+                "a":{"text": "Cinq", "correct": false},
+                "b":{"text": "Huit", "correct": true},
+                "c":{"text": "Dix", "correct": false},
+                "d":{"text": "Treize", "correct": false}}
+        }
+    ],
+
+    "question14":[
+        {
+            "oneLine": true,
+            "text": "Quelle plante très ramifiée est aussi appelée « herbe sacrée » ?",
+            "answers": {
+                "a":{"text": "L'estragon", "correct": false},
+                "b":{"text": "La sariette", "correct": false},
+                "c":{"text": "La sauge", "correct": true},
+                "d":{"text": "La coriandre", "correct": false}}
+        }
+    ],
+
+    "question15":[
+        {
+            "oneLine": false,
+            "text": "Quel peintre français est célèbre pour ses lithographies satiriques de la bourgeoisie ?",
+            "answers": {
+                "a":{"text": "Fuseli", "correct": false},
+                "b":{"text": "Daumier", "correct": true},
+                "c":{"text": "Delacroix", "correct": false},
+                "d":{"text": "Géricault", "correct": false}}
+        }
+    ]    
+}
